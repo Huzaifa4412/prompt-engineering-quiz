@@ -130,28 +130,20 @@ else:
         st.rerun()
 
 # --- Download Resources ---
-with open("resources/prompt engieering guide.pdf", "rb") as f:
-    pdf_data = f.read()
-
-with open(
-    "resources/Complete_Prompt_Engineering_Master_Guide - Basics to Advanced.pdf",
-    "rb",
-) as f:
-    pdf_data_roman = f.read()
 
 
-st.download_button(
-    label="📥 Download Google official prompt engineering guide",
-    data=pdf_data,
-    file_name="google_prompt_engineering.pdf",
-    mime="application/pdf",
-)
-st.download_button(
-    label="📥 Download My prompt Engineering Complete guide Notes in Roman Urdu",
-    data=pdf_data_roman,
-    file_name="huzaifa_roman_urdu_prompt_engineering.pdf",
-    mime="application/pdf",
-)
+# with open(
+#     "resources/Complete_Prompt_Engineering_Master_Guide - Basics to Advanced.pdf",
+#     "rb",
+# ) as f:
+#     pdf_data_roman = f.read()
+
+# st.download_button(
+#     label="📥 Download My prompt Engineering Complete guide Notes in Roman Urdu",
+#     data=pdf_data_roman,
+#     file_name="huzaifa_roman_urdu_prompt_engineering.pdf",
+#     mime="application/pdf",
+# )
 
 
 # --- Footer ---
