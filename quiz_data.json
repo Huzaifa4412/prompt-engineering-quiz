@@ -1,0 +1,1772 @@
+[
+    {
+        "question": "What is the primary function of an LLM in prompt engineering?",
+        "options": [
+            "To store large amounts of data",
+            "To predict the next token based on input and training data",
+            "To translate languages only",
+            "To generate images from text"
+        ],
+        "correct_answer": "To predict the next token based on input and training data",
+        "level": "Beginner",
+        "topic": "LLM Basics"
+    },
+    {
+        "question": "Which temperature setting provides the most deterministic responses?",
+        "options": ["0.8-1.0", "0.4-0.7", "0.0-0.3", "1.5-2.0"],
+        "correct_answer": "0.0-0.3",
+        "level": "Beginner",
+        "topic": "Temperature Control"
+    },
+    {
+        "question": "What does 'zero-shot' prompting mean?",
+        "options": [
+            "Using no examples in the prompt",
+            "Setting temperature to zero",
+            "Using one example",
+            "Using multiple examples"
+        ],
+        "correct_answer": "Using no examples in the prompt",
+        "level": "Beginner",
+        "topic": "Zero-shot"
+    },
+    {
+        "question": "How many examples are optimal for few-shot prompting?",
+        "options": [
+            "1-2 examples",
+            "3-5 examples",
+            "10-15 examples",
+            "20+ examples"
+        ],
+        "correct_answer": "3-5 examples",
+        "level": "Beginner",
+        "topic": "Few-shot"
+    },
+    {
+        "question": "What is the main purpose of system prompting?",
+        "options": [
+            "To provide examples",
+            "To set overall context and behavior",
+            "To increase creativity",
+            "To reduce token usage"
+        ],
+        "correct_answer": "To set overall context and behavior",
+        "level": "Beginner",
+        "topic": "System Prompts"
+    },
+    {
+        "question": "Which phrase commonly triggers Chain of Thought reasoning?",
+        "options": [
+            "Think carefully",
+            "Let's think step by step",
+            "Consider all options",
+            "Be creative"
+        ],
+        "correct_answer": "Let's think step by step",
+        "level": "Beginner",
+        "topic": "Chain-of-Thought"
+    },
+    {
+        "question": "What temperature should be used for Chain of Thought prompting?",
+        "options": ["0.8-1.0", "0.4-0.7", "0 (zero)", "1.5"],
+        "correct_answer": "0 (zero)",
+        "level": "Beginner",
+        "topic": "Chain-of-Thought"
+    },
+    {
+        "question": "What is the main advantage of using JSON output format?",
+        "options": [
+            "It looks better",
+            "It reduces hallucinations and provides structure",
+            "It uses fewer tokens",
+            "It's easier to read"
+        ],
+        "correct_answer": "It reduces hallucinations and provides structure",
+        "level": "Beginner",
+        "topic": "Output Formatting"
+    },
+    {
+        "question": "Which sampling method selects the top K most likely tokens?",
+        "options": [
+            "Top-P sampling",
+            "Temperature sampling",
+            "Top-K sampling",
+            "Nucleus sampling"
+        ],
+        "correct_answer": "Top-K sampling",
+        "level": "Beginner",
+        "topic": "Sampling Methods"
+    },
+    {
+        "question": "What does Top-P (nucleus) sampling control?",
+        "options": [
+            "The number of tokens",
+            "The cumulative probability threshold",
+            "The temperature",
+            "The model version"
+        ],
+        "correct_answer": "The cumulative probability threshold",
+        "level": "Beginner",
+        "topic": "Sampling Methods"
+    },
+    {
+        "question": "What happens when you set Top-K to 1?",
+        "options": [
+            "Maximum creativity",
+            "Equivalent to greedy decoding",
+            "Random selection",
+            "Error occurs"
+        ],
+        "correct_answer": "Equivalent to greedy decoding",
+        "level": "Beginner",
+        "topic": "Sampling Methods"
+    },
+    {
+        "question": "In role prompting, what should you specify?",
+        "options": [
+            "Only the task",
+            "The specific role/character for the AI to adopt",
+            "The output length",
+            "The temperature setting"
+        ],
+        "correct_answer": "The specific role/character for the AI to adopt",
+        "level": "Beginner",
+        "topic": "Role Prompting"
+    },
+    {
+        "question": "What is contextual prompting best used for?",
+        "options": [
+            "Mathematical calculations",
+            "Providing specific background information for tasks",
+            "Creative writing",
+            "Code debugging"
+        ],
+        "correct_answer": "Providing specific background information for tasks",
+        "level": "Beginner",
+        "topic": "Contextual Prompting"
+    },
+    {
+        "question": "Which approach is better: instructions or constraints?",
+        "options": [
+            "Always use constraints",
+            "Always use instructions",
+            "Use instructions over constraints when possible",
+            "They are equally effective"
+        ],
+        "correct_answer": "Use instructions over constraints when possible",
+        "level": "Beginner",
+        "topic": "Instruction Design"
+    },
+    {
+        "question": "What is the 'repetition loop bug'?",
+        "options": [
+            "Model repeats the same input",
+            "Model gets stuck generating the same filler words repeatedly",
+            "Model stops generating tokens",
+            "Model generates too many tokens"
+        ],
+        "correct_answer": "Model gets stuck generating the same filler words repeatedly",
+        "level": "Beginner",
+        "topic": "Common Issues"
+    },
+    {
+        "question": "What causes repetition loop at low temperatures?",
+        "options": [
+            "Too much randomness",
+            "Overly deterministic behavior leading to loops",
+            "High creativity",
+            "Token limit reached"
+        ],
+        "correct_answer": "Overly deterministic behavior leading to loops",
+        "level": "Beginner",
+        "topic": "Common Issues"
+    },
+    {
+        "question": "Which is a good action verb for prompts?",
+        "options": ["Think", "Consider", "Analyze", "Wonder"],
+        "correct_answer": "Analyze",
+        "level": "Beginner",
+        "topic": "Prompt Design"
+    },
+    {
+        "question": "What should you do when designing prompts?",
+        "options": [
+            "Make them as complex as possible",
+            "Keep them simple and clear",
+            "Use technical jargon",
+            "Make them very long"
+        ],
+        "correct_answer": "Keep them simple and clear",
+        "level": "Beginner",
+        "topic": "Prompt Design"
+    },
+    {
+        "question": "What is the main benefit of using variables in prompts?",
+        "options": [
+            "They look professional",
+            "They make prompts reusable and dynamic",
+            "They reduce costs",
+            "They increase accuracy"
+        ],
+        "correct_answer": "They make prompts reusable and dynamic",
+        "level": "Beginner",
+        "topic": "Variables"
+    },
+    {
+        "question": "What should you do with classification classes in few-shot prompting?",
+        "options": [
+            "Keep them in the same order",
+            "Use only positive examples",
+            "Mix up the classes randomly",
+            "Use alphabetical order"
+        ],
+        "correct_answer": "Mix up the classes randomly",
+        "level": "Beginner",
+        "topic": "Few-shot"
+    },
+    {
+        "question": "What is prompt engineering?",
+        "options": [
+            "Writing code for AI models",
+            "Designing high-quality prompts to guide LLMs",
+            "Training neural networks",
+            "Building chatbots"
+        ],
+        "correct_answer": "Designing high-quality prompts to guide LLMs",
+        "level": "Beginner",
+        "topic": "Prompt Basics"
+    },
+    {
+        "question": "What does a higher temperature setting generally produce?",
+        "options": [
+            "More factual responses",
+            "More creative and varied responses",
+            "Faster responses",
+            "Shorter responses"
+        ],
+        "correct_answer": "More creative and varied responses",
+        "level": "Beginner",
+        "topic": "Temperature Control"
+    },
+    {
+        "question": "What is one-shot prompting?",
+        "options": [
+            "Using zero examples",
+            "Using exactly one example",
+            "Using multiple examples",
+            "Setting temperature to 1"
+        ],
+        "correct_answer": "Using exactly one example",
+        "level": "Beginner",
+        "topic": "One-shot"
+    },
+    {
+        "question": "Which technique assigns a specific character to the AI?",
+        "options": [
+            "System prompting",
+            "Role prompting",
+            "Contextual prompting",
+            "Chain of thought"
+        ],
+        "correct_answer": "Role prompting",
+        "level": "Beginner",
+        "topic": "Role Prompting"
+    },
+    {
+        "question": "What is the purpose of providing examples in prompts?",
+        "options": [
+            "To make prompts longer",
+            "To confuse the model",
+            "To guide the model's output pattern",
+            "To increase token usage"
+        ],
+        "correct_answer": "To guide the model's output pattern",
+        "level": "Beginner",
+        "topic": "Examples"
+    },
+    {
+        "question": "When should you use low temperature settings?",
+        "options": [
+            "For creative writing",
+            "For factual, deterministic tasks",
+            "For brainstorming",
+            "For generating multiple options"
+        ],
+        "correct_answer": "For factual, deterministic tasks",
+        "level": "Beginner",
+        "topic": "Temperature Control"
+    },
+    {
+        "question": "What does greedy decoding mean?",
+        "options": [
+            "Using the most expensive model",
+            "Always selecting the highest probability token",
+            "Using all available tokens",
+            "Maximizing response length"
+        ],
+        "correct_answer": "Always selecting the highest probability token",
+        "level": "Beginner",
+        "topic": "Decoding"
+    },
+    {
+        "question": "What is the benefit of structured output like JSON?",
+        "options": [
+            "It's prettier",
+            "It's easier to parse and reduces hallucinations",
+            "It's shorter",
+            "It's more creative"
+        ],
+        "correct_answer": "It's easier to parse and reduces hallucinations",
+        "level": "Beginner",
+        "topic": "Output Formatting"
+    },
+    {
+        "question": "What should be included in good few-shot examples?",
+        "options": [
+            "Only simple cases",
+            "Diverse, high-quality, relevant examples",
+            "Random examples",
+            "Only complex cases"
+        ],
+        "correct_answer": "Diverse, high-quality, relevant examples",
+        "level": "Beginner",
+        "topic": "Few-shot"
+    },
+    {
+        "question": "What is the primary goal of prompt engineering?",
+        "options": [
+            "Making prompts longer",
+            "Getting accurate and useful outputs from LLMs",
+            "Reducing computation costs",
+            "Speeding up responses"
+        ],
+        "correct_answer": "Getting accurate and useful outputs from LLMs",
+        "level": "Beginner",
+        "topic": "Prompt Basics"
+    },
+    {
+        "question": "What does 'nucleus sampling' refer to?",
+        "options": [
+            "Top-K sampling",
+            "Top-P sampling",
+            "Temperature sampling",
+            "Random sampling"
+        ],
+        "correct_answer": "Top-P sampling",
+        "level": "Beginner",
+        "topic": "Sampling Methods"
+    },
+    {
+        "question": "When would you increase the token limit?",
+        "options": [
+            "For simple yes/no questions",
+            "For detailed, comprehensive responses",
+            "To reduce costs",
+            "To speed up processing"
+        ],
+        "correct_answer": "For detailed, comprehensive responses",
+        "level": "Beginner",
+        "topic": "Token Management"
+    },
+    {
+        "question": "What is the difference between system and user prompts?",
+        "options": [
+            "No difference",
+            "System sets behavior, user provides the task",
+            "System is longer",
+            "User is more important"
+        ],
+        "correct_answer": "System sets behavior, user provides the task",
+        "level": "Beginner",
+        "topic": "System vs User"
+    },
+    {
+        "question": "What happens when Top-P is set to 1?",
+        "options": [
+            "Only one token is considered",
+            "All tokens with non-zero probability are considered",
+            "Maximum creativity",
+            "Minimum creativity"
+        ],
+        "correct_answer": "All tokens with non-zero probability are considered",
+        "level": "Beginner",
+        "topic": "Sampling Methods"
+    },
+    {
+        "question": "Why should you document prompt attempts?",
+        "options": [
+            "It's required by law",
+            "To track what works and learn from experiments",
+            "To impress colleagues",
+            "To increase costs"
+        ],
+        "correct_answer": "To track what works and learn from experiments",
+        "level": "Beginner",
+        "topic": "Best Practices"
+    },
+    {
+        "question": "What is a key characteristic of effective prompts?",
+        "options": [
+            "They are very long",
+            "They are clear and specific",
+            "They use complex vocabulary",
+            "They avoid examples"
+        ],
+        "correct_answer": "They are clear and specific",
+        "level": "Beginner",
+        "topic": "Prompt Design"
+    },
+    {
+        "question": "What should you do if a model gives inconsistent results?",
+        "options": [
+            "Ignore it",
+            "Lower temperature and add constraints",
+            "Increase temperature",
+            "Use more examples"
+        ],
+        "correct_answer": "Lower temperature and add constraints",
+        "level": "Beginner",
+        "topic": "Troubleshooting"
+    },
+    {
+        "question": "What is the purpose of edge cases in few-shot examples?",
+        "options": [
+            "To confuse the model",
+            "To help the model handle unusual inputs",
+            "To make prompts longer",
+            "To reduce accuracy"
+        ],
+        "correct_answer": "To help the model handle unusual inputs",
+        "level": "Beginner",
+        "topic": "Few-shot"
+    },
+    {
+        "question": "Which is better for instruction design?",
+        "options": [
+            "'Don't be informal'",
+            "'Write professionally'",
+            "'Avoid mistakes'",
+            "'Don't use slang'"
+        ],
+        "correct_answer": "'Write professionally'",
+        "level": "Beginner",
+        "topic": "Instruction Design"
+    },
+    {
+        "question": "What is multimodal prompting?",
+        "options": [
+            "Using multiple models",
+            "Using text, images, and other input types",
+            "Using multiple temperatures",
+            "Using multiple examples"
+        ],
+        "correct_answer": "Using text, images, and other input types",
+        "level": "Beginner",
+        "topic": "Multimodal"
+    },
+    {
+        "question": "What is the main drawback of generating more tokens?",
+        "options": [
+            "Lower quality",
+            "Higher computational cost and slower responses",
+            "Less creativity",
+            "More errors"
+        ],
+        "correct_answer": "Higher computational cost and slower responses",
+        "level": "Beginner",
+        "topic": "Token Management"
+    },
+    {
+        "question": "What should be the focus when writing clear prompts?",
+        "options": [
+            "Length",
+            "Complexity",
+            "Clarity and specificity",
+            "Technical terms"
+        ],
+        "correct_answer": "Clarity and specificity",
+        "level": "Beginner",
+        "topic": "Prompt Design"
+    },
+    {
+        "question": "What is step-back prompting?",
+        "options": [
+            "Going backwards in conversation",
+            "First asking general questions, then specific ones",
+            "Reducing prompt complexity",
+            "Using previous responses"
+        ],
+        "correct_answer": "First asking general questions, then specific ones",
+        "level": "Beginner",
+        "topic": "Step-back Prompting"
+    },
+    {
+        "question": "What type of tasks benefit most from examples?",
+        "options": [
+            "Simple factual questions",
+            "Pattern recognition and formatting tasks",
+            "Mathematical calculations",
+            "Creative writing"
+        ],
+        "correct_answer": "Pattern recognition and formatting tasks",
+        "level": "Beginner",
+        "topic": "Examples"
+    },
+    {
+        "question": "What is the recommended starting point for balanced settings?",
+        "options": [
+            "Temp=0, Top-P=1, Top-K=1",
+            "Temp=0.2, Top-P=0.95, Top-K=30",
+            "Temp=1, Top-P=0.5, Top-K=10",
+            "Temp=2, Top-P=1, Top-K=100"
+        ],
+        "correct_answer": "Temp=0.2, Top-P=0.95, Top-K=30",
+        "level": "Beginner",
+        "topic": "Configuration"
+    },
+    {
+        "question": "When should prompts be model-specific?",
+        "options": [
+            "Always",
+            "Never",
+            "When different models have different capabilities",
+            "Only for creative tasks"
+        ],
+        "correct_answer": "When different models have different capabilities",
+        "level": "Beginner",
+        "topic": "Model Adaptation"
+    },
+    {
+        "question": "What is the primary benefit of prompt templates?",
+        "options": [
+            "They look professional",
+            "They ensure consistency and reusability",
+            "They are shorter",
+            "They cost less"
+        ],
+        "correct_answer": "They ensure consistency and reusability",
+        "level": "Beginner",
+        "topic": "Templates"
+    },
+    {
+        "question": "What should you do when a prompt produces off-topic responses?",
+        "options": [
+            "Increase temperature",
+            "Add clearer system prompts and task definition",
+            "Use more examples",
+            "Reduce token limit"
+        ],
+        "correct_answer": "Add clearer system prompts and task definition",
+        "level": "Beginner",
+        "topic": "Troubleshooting"
+    },
+    {
+        "question": "What is the key to successful prompt iteration?",
+        "options": [
+            "Speed",
+            "Testing, analyzing, and refining",
+            "Using complex language",
+            "Adding more examples"
+        ],
+        "correct_answer": "Testing, analyzing, and refining",
+        "level": "Beginner",
+        "topic": "Iteration"
+    },
+    {
+        "question": "What makes a good action verb in prompts?",
+        "options": [
+            "It's long",
+            "It's specific and clear about the desired action",
+            "It's creative",
+            "It's technical"
+        ],
+        "correct_answer": "It's specific and clear about the desired action",
+        "level": "Beginner",
+        "topic": "Prompt Design"
+    },
+    {
+        "question": "What is the purpose of context in prompts?",
+        "options": [
+            "To make them longer",
+            "To provide relevant background information",
+            "To confuse the model",
+            "To reduce accuracy"
+        ],
+        "correct_answer": "To provide relevant background information",
+        "level": "Beginner",
+        "topic": "Context"
+    },
+    {
+        "question": "When should you use higher temperatures?",
+        "options": [
+            "For math problems",
+            "For creative and exploratory tasks",
+            "For factual queries",
+            "For classification tasks"
+        ],
+        "correct_answer": "For creative and exploratory tasks",
+        "level": "Beginner",
+        "topic": "Temperature Control"
+    },
+    {
+        "question": "What is the main advantage of using positive instructions?",
+        "options": [
+            "They are shorter",
+            "They clearly communicate desired outcomes",
+            "They are more polite",
+            "They use less tokens"
+        ],
+        "correct_answer": "They clearly communicate desired outcomes",
+        "level": "Beginner",
+        "topic": "Instruction Design"
+    },
+    {
+        "question": "What should be avoided in prompt design?",
+        "options": [
+            "Examples",
+            "Clear instructions",
+            "Unnecessary complexity and ambiguity",
+            "Specific output requirements"
+        ],
+        "correct_answer": "Unnecessary complexity and ambiguity",
+        "level": "Beginner",
+        "topic": "Prompt Design"
+    },
+    {
+        "question": "What is the relationship between token generation and cost?",
+        "options": [
+            "No relationship",
+            "More tokens generally cost more",
+            "Fewer tokens cost more",
+            "Cost is always the same"
+        ],
+        "correct_answer": "More tokens generally cost more",
+        "level": "Beginner",
+        "topic": "Token Management"
+    },
+    {
+        "question": "What should you consider when choosing between Top-K and Top-P?",
+        "options": [
+            "Always use Top-K",
+            "Always use Top-P",
+            "Experiment with both to see what works",
+            "They are the same"
+        ],
+        "correct_answer": "Experiment with both to see what works",
+        "level": "Beginner",
+        "topic": "Sampling Methods"
+    },
+    {
+        "question": "What is prompt chaining?",
+        "options": [
+            "Using multiple models",
+            "Using outputs from one prompt as input to another",
+            "Linking prompts with chains",
+            "Using the same prompt repeatedly"
+        ],
+        "correct_answer": "Using outputs from one prompt as input to another",
+        "level": "Beginner",
+        "topic": "Prompt Chaining"
+    },
+    {
+        "question": "What is the benefit of breaking complex tasks into smaller prompts?",
+        "options": [
+            "It's more expensive",
+            "It improves accuracy and manageability",
+            "It's slower",
+            "It's more complex"
+        ],
+        "correct_answer": "It improves accuracy and manageability",
+        "level": "Beginner",
+        "topic": "Task Decomposition"
+    },
+    {
+        "question": "What characterizes good few-shot examples?",
+        "options": [
+            "They are all identical",
+            "They are diverse and include edge cases",
+            "They are very simple",
+            "They are randomly selected"
+        ],
+        "correct_answer": "They are diverse and include edge cases",
+        "level": "Beginner",
+        "topic": "Few-shot"
+    },
+    {
+        "question": "What is the main purpose of system messages?",
+        "options": [
+            "To provide examples",
+            "To set the AI's role and behavior guidelines",
+            "To ask questions",
+            "To provide data"
+        ],
+        "correct_answer": "To set the AI's role and behavior guidelines",
+        "level": "Beginner",
+        "topic": "System Messages"
+    },
+    {
+        "question": "What is self-consistency in prompt engineering?",
+        "options": [
+            "Using the same prompt multiple times",
+            "Generating diverse reasoning paths and selecting the most common answer",
+            "Keeping consistent formatting",
+            "Using consistent temperature"
+        ],
+        "correct_answer": "Generating diverse reasoning paths and selecting the most common answer",
+        "level": "Intermediate",
+        "topic": "Self-consistency"
+    },
+    {
+        "question": "How does Tree of Thoughts (ToT) differ from Chain of Thought?",
+        "options": [
+            "ToT is simpler than CoT",
+            "ToT explores multiple reasoning paths simultaneously",
+            "ToT only works with math",
+            "ToT uses lower temperature"
+        ],
+        "correct_answer": "ToT explores multiple reasoning paths simultaneously",
+        "level": "Intermediate",
+        "topic": "Tree-of-Thought"
+    },
+    {
+        "question": "What does ReAct (Reason & Act) combine?",
+        "options": [
+            "Reasoning and creativity",
+            "Reasoning and external tool usage",
+            "Acting and writing",
+            "Thinking and speaking"
+        ],
+        "correct_answer": "Reasoning and external tool usage",
+        "level": "Intermediate",
+        "topic": "ReAct"
+    },
+    {
+        "question": "What is step-back prompting designed to do?",
+        "options": [
+            "Go backwards in time",
+            "First consider general principles, then tackle specific tasks",
+            "Reduce prompt length",
+            "Use previous prompts"
+        ],
+        "correct_answer": "First consider general principles, then tackle specific tasks",
+        "level": "Intermediate",
+        "topic": "Step-back Prompting"
+    },
+    {
+        "question": "In ReAct prompting, what follows the 'Thought' step?",
+        "options": ["Conclusion", "Action", "Question", "Summary"],
+        "correct_answer": "Action",
+        "level": "Intermediate",
+        "topic": "ReAct"
+    },
+    {
+        "question": "What is Automatic Prompt Engineering (APE)?",
+        "options": [
+            "Using AI to run prompts automatically",
+            "Using AI to generate and improve prompts",
+            "Automating responses",
+            "Using pre-built prompts only"
+        ],
+        "correct_answer": "Using AI to generate and improve prompts",
+        "level": "Intermediate",
+        "topic": "APE"
+    },
+    {
+        "question": "When should you use Chain of Thought prompting?",
+        "options": [
+            "For simple factual questions",
+            "For complex problems requiring reasoning",
+            "For creative writing only",
+            "For translation tasks"
+        ],
+        "correct_answer": "For complex problems requiring reasoning",
+        "level": "Intermediate",
+        "topic": "Chain-of-Thought"
+    },
+    {
+        "question": "What is required for extracting answers in self-consistency?",
+        "options": [
+            "Using the same temperature",
+            "The final answer must be separable from reasoning",
+            "Using JSON format",
+            "Having exactly 5 attempts"
+        ],
+        "correct_answer": "The final answer must be separable from reasoning",
+        "level": "Intermediate",
+        "topic": "Self-consistency"
+    },
+    {
+        "question": "Which temperature setting would you use for self-consistency?",
+        "options": [
+            "0 (zero)",
+            "0.2-0.4",
+            "Higher temperature for diverse paths",
+            "Maximum temperature"
+        ],
+        "correct_answer": "Higher temperature for diverse paths",
+        "level": "Intermediate",
+        "topic": "Self-consistency"
+    },
+    {
+        "question": "What is the main drawback of Chain of Thought prompting?",
+        "options": [
+            "Lower accuracy",
+            "Increased token usage and costs",
+            "Doesn't work with math",
+            "Too simple"
+        ],
+        "correct_answer": "Increased token usage and costs",
+        "level": "Intermediate",
+        "topic": "Chain-of-Thought"
+    },
+    {
+        "question": "In Tree of Thoughts, what does each 'thought' represent?",
+        "options": [
+            "A complete answer",
+            "A coherent sequence as an intermediate step",
+            "A question",
+            "An error"
+        ],
+        "correct_answer": "A coherent sequence as an intermediate step",
+        "level": "Intermediate",
+        "topic": "Tree-of-Thought"
+    },
+    {
+        "question": "What type of tasks are best suited for Tree of Thoughts?",
+        "options": [
+            "Simple classifications",
+            "Complex tasks requiring exploration",
+            "Translation tasks",
+            "Factual queries"
+        ],
+        "correct_answer": "Complex tasks requiring exploration",
+        "level": "Intermediate",
+        "topic": "Tree-of-Thought"
+    },
+    {
+        "question": "What is the first step in the ReAct process?",
+        "options": ["Action", "Observation", "Thought/Reasoning", "Conclusion"],
+        "correct_answer": "Thought/Reasoning",
+        "level": "Intermediate",
+        "topic": "ReAct"
+    },
+    {
+        "question": "How does step-back prompting help with bias?",
+        "options": [
+            "It eliminates all bias",
+            "It focuses on general principles instead of specifics",
+            "It uses more examples",
+            "It increases temperature"
+        ],
+        "correct_answer": "It focuses on general principles instead of specifics",
+        "level": "Intermediate",
+        "topic": "Step-back Prompting"
+    },
+    {
+        "question": "What should you do after generating multiple prompts with APE?",
+        "options": [
+            "Use the first one",
+            "Evaluate and score them using metrics",
+            "Combine them all",
+            "Ignore the results"
+        ],
+        "correct_answer": "Evaluate and score them using metrics",
+        "level": "Intermediate",
+        "topic": "APE"
+    },
+    {
+        "question": "Which technique would you use for a math word problem?",
+        "options": [
+            "Zero-shot",
+            "Chain of Thought",
+            "Role prompting",
+            "System prompting"
+        ],
+        "correct_answer": "Chain of Thought",
+        "level": "Intermediate",
+        "topic": "Chain-of-Thought"
+    },
+    {
+        "question": "When using self-consistency, how do you determine the final answer?",
+        "options": [
+            "Use the first answer",
+            "Use the longest answer",
+            "Use the most frequently occurring answer",
+            "Use the last answer"
+        ],
+        "correct_answer": "Use the most frequently occurring answer",
+        "level": "Intermediate",
+        "topic": "Self-consistency"
+    },
+    {
+        "question": "What is a key advantage of ReAct over regular prompting?",
+        "options": [
+            "It's faster",
+            "It can interact with external information sources",
+            "It uses fewer tokens",
+            "It's more creative"
+        ],
+        "correct_answer": "It can interact with external information sources",
+        "level": "Intermediate",
+        "topic": "ReAct"
+    },
+    {
+        "question": "In step-back prompting, what type of question do you ask first?",
+        "options": [
+            "Very specific question",
+            "General question related to the task",
+            "Unrelated question",
+            "Multiple choice question"
+        ],
+        "correct_answer": "General question related to the task",
+        "level": "Intermediate",
+        "topic": "Step-back Prompting"
+    },
+    {
+        "question": "What makes Tree of Thoughts different from linear reasoning?",
+        "options": [
+            "It's faster",
+            "It maintains a tree structure with multiple branches",
+            "It uses lower temperature",
+            "It needs fewer examples"
+        ],
+        "correct_answer": "It maintains a tree structure with multiple branches",
+        "level": "Intermediate",
+        "topic": "Tree-of-Thought"
+    },
+    {
+        "question": "For which scenario would you NOT use Chain of Thought?",
+        "options": [
+            "Solving math problems",
+            "Complex reasoning tasks",
+            "Simple factual lookups",
+            "Multi-step analysis"
+        ],
+        "correct_answer": "Simple factual lookups",
+        "level": "Intermediate",
+        "topic": "Chain-of-Thought"
+    },
+    {
+        "question": "What is essential for effective ReAct implementation?",
+        "options": [
+            "High temperature",
+            "Access to external tools or APIs",
+            "Long prompts",
+            "Multiple examples"
+        ],
+        "correct_answer": "Access to external tools or APIs",
+        "level": "Intermediate",
+        "topic": "ReAct"
+    },
+    {
+        "question": "In self-consistency, why do you need multiple attempts?",
+        "options": [
+            "To waste tokens",
+            "To generate diverse reasoning paths for comparison",
+            "To confuse the model",
+            "To increase costs"
+        ],
+        "correct_answer": "To generate diverse reasoning paths for comparison",
+        "level": "Intermediate",
+        "topic": "Self-consistency"
+    },
+    {
+        "question": "What should you include when documenting prompt attempts?",
+        "options": [
+            "Only successful prompts",
+            "Goal, model, configuration, prompt, and output",
+            "Just the final prompt",
+            "Only the output"
+        ],
+        "correct_answer": "Goal, model, configuration, prompt, and output",
+        "level": "Intermediate",
+        "topic": "Documentation"
+    },
+    {
+        "question": "Which advanced technique is best for creative problem-solving?",
+        "options": [
+            "Chain of Thought",
+            "Tree of Thoughts",
+            "Self-consistency",
+            "ReAct"
+        ],
+        "correct_answer": "Tree of Thoughts",
+        "level": "Intermediate",
+        "topic": "Tree-of-Thought"
+    },
+    {
+        "question": "What happens when sampling settings are at extreme values?",
+        "options": [
+            "They work better together",
+            "One setting may cancel others or become irrelevant",
+            "All settings become more important",
+            "The model crashes"
+        ],
+        "correct_answer": "One setting may cancel others or become irrelevant",
+        "level": "Intermediate",
+        "topic": "Configuration"
+    },
+    {
+        "question": "How should you handle hallucinations in AI outputs?",
+        "options": [
+            "Ignore them",
+            "Request sources/citations and use structured output",
+            "Increase temperature",
+            "Use fewer examples"
+        ],
+        "correct_answer": "Request sources/citations and use structured output",
+        "level": "Intermediate",
+        "topic": "Hallucination"
+    },
+    {
+        "question": "What is the benefit of A/B testing prompts?",
+        "options": [
+            "It looks scientific",
+            "Compare different approaches to find most effective",
+            "It takes more time",
+            "It's more expensive"
+        ],
+        "correct_answer": "Compare different approaches to find most effective",
+        "level": "Intermediate",
+        "topic": "Testing"
+    },
+    {
+        "question": "What's a good practice for complex tasks?",
+        "options": [
+            "Use one long prompt",
+            "Break into smaller sub-tasks (prompt chaining)",
+            "Increase temperature",
+            "Use fewer examples"
+        ],
+        "correct_answer": "Break into smaller sub-tasks (prompt chaining)",
+        "level": "Intermediate",
+        "topic": "Task Decomposition"
+    },
+    {
+        "question": "How should you handle domain-specific tasks?",
+        "options": [
+            "Use generic prompts",
+            "Adapt prompts with domain-specific terminology and examples",
+            "Avoid examples",
+            "Use maximum creativity"
+        ],
+        "correct_answer": "Adapt prompts with domain-specific terminology and examples",
+        "level": "Intermediate",
+        "topic": "Domain Adaptation"
+    },
+    {
+        "question": "What should you do when working with different models?",
+        "options": [
+            "Use identical prompts",
+            "Test and adapt prompts for each model's characteristics",
+            "Always use same settings",
+            "Ignore model differences"
+        ],
+        "correct_answer": "Test and adapt prompts for each model's characteristics",
+        "level": "Intermediate",
+        "topic": "Model Adaptation"
+    },
+    {
+        "question": "Why is meta-prompting useful?",
+        "options": [
+            "It's trendy",
+            "Use AI to analyze and improve your prompts",
+            "It's faster",
+            "It's cheaper"
+        ],
+        "correct_answer": "Use AI to analyze and improve your prompts",
+        "level": "Intermediate",
+        "topic": "Meta-prompting"
+    },
+    {
+        "question": "What should you prioritize when debugging prompts?",
+        "options": [
+            "Speed only",
+            "Clarity, specificity, and conflicting instructions",
+            "Length only",
+            "Creativity only"
+        ],
+        "correct_answer": "Clarity, specificity, and conflicting instructions",
+        "level": "Intermediate",
+        "topic": "Debugging"
+    },
+    {
+        "question": "How should you approach few-shot example selection?",
+        "options": [
+            "Use random examples",
+            "Choose diverse, high-quality, relevant examples including edge cases",
+            "Use only simple examples",
+            "Use identical examples"
+        ],
+        "correct_answer": "Choose diverse, high-quality, relevant examples including edge cases",
+        "level": "Intermediate",
+        "topic": "Few-shot"
+    },
+    {
+        "question": "What's important when designing prompts for agents?",
+        "options": [
+            "Only focus on the task",
+            "Include tool awareness, error handling, and multi-step instructions",
+            "Keep them very simple",
+            "Avoid mentioning tools"
+        ],
+        "correct_answer": "Include tool awareness, error handling, and multi-step instructions",
+        "level": "Intermediate",
+        "topic": "Agent Design"
+    },
+    {
+        "question": "When should you use step-by-step reasoning?",
+        "options": [
+            "For all tasks",
+            "For complex problems that benefit from broken-down analysis",
+            "Never",
+            "Only for math"
+        ],
+        "correct_answer": "For complex problems that benefit from broken-down analysis",
+        "level": "Intermediate",
+        "topic": "Reasoning"
+    },
+    {
+        "question": "What configuration would you use for math problems with single correct answers?",
+        "options": [
+            "High temperature and Top-K",
+            "Temperature = 0",
+            "Maximum Top-P",
+            "Balanced settings"
+        ],
+        "correct_answer": "Temperature = 0",
+        "level": "Intermediate",
+        "topic": "Configuration"
+    },
+    {
+        "question": "What should you do if you encounter the repetition loop bug?",
+        "options": [
+            "Increase temperature",
+            "Decrease temperature",
+            "Carefully adjust temperature and top-K/top-P values",
+            "Ignore it"
+        ],
+        "correct_answer": "Carefully adjust temperature and top-K/top-P values",
+        "level": "Intermediate",
+        "topic": "Troubleshooting"
+    },
+    {
+        "question": "How do temperature and Top-K work together?",
+        "options": [
+            "They work independently",
+            "Temperature is applied to tokens that pass Top-K criteria",
+            "Top-K overrides temperature",
+            "They cannot be used together"
+        ],
+        "correct_answer": "Temperature is applied to tokens that pass Top-K criteria",
+        "level": "Intermediate",
+        "topic": "Configuration"
+    },
+    {
+        "question": "What is a sign that temperature setting is too high?",
+        "options": [
+            "Very deterministic responses",
+            "Excessively random and incoherent output",
+            "No output generated",
+            "Perfect answers every time"
+        ],
+        "correct_answer": "Excessively random and incoherent output",
+        "level": "Intermediate",
+        "topic": "Temperature Control"
+    },
+    {
+        "question": "Which setting would you adjust first for more creative outputs?",
+        "options": ["Top-K only", "Top-P only", "Temperature", "Token limit"],
+        "correct_answer": "Temperature",
+        "level": "Intermediate",
+        "topic": "Creativity Control"
+    },
+    {
+        "question": "How should you handle output length requirements?",
+        "options": [
+            "Only use max token limits",
+            "Combine max token limits with explicit length requests in prompt",
+            "Ignore length requirements",
+            "Always use maximum tokens"
+        ],
+        "correct_answer": "Combine max token limits with explicit length requests in prompt",
+        "level": "Intermediate",
+        "topic": "Length Control"
+    },
+    {
+        "question": "What happens when you set Top-K extremely high?",
+        "options": [
+            "Only one token is selected",
+            "It becomes irrelevant as most tokens meet criteria",
+            "Model stops working",
+            "Temperature becomes more important"
+        ],
+        "correct_answer": "It becomes irrelevant as most tokens meet criteria",
+        "level": "Intermediate",
+        "topic": "Sampling Methods"
+    },
+    {
+        "question": "For creative writing tasks, which configuration is most appropriate?",
+        "options": [
+            "Temp=0.9, Top-P=0.99, Top-K=40",
+            "Temp=0, Top-P=0.9, Top-K=20",
+            "Temp=0.1, Top-P=0.95, Top-K=30",
+            "All settings at maximum"
+        ],
+        "correct_answer": "Temp=0.9, Top-P=0.99, Top-K=40",
+        "level": "Intermediate",
+        "topic": "Creative Configuration"
+    },
+    {
+        "question": "What should you monitor when setting token limits?",
+        "options": [
+            "Only the maximum",
+            "Truncation and incomplete responses",
+            "Minimum limits only",
+            "Token costs only"
+        ],
+        "correct_answer": "Truncation and incomplete responses",
+        "level": "Intermediate",
+        "topic": "Token Management"
+    },
+    {
+        "question": "How does reducing output length affect model behavior?",
+        "options": [
+            "Makes responses more concise naturally",
+            "Just stops generation when limit is reached",
+            "Improves quality",
+            "Reduces accuracy"
+        ],
+        "correct_answer": "Just stops generation when limit is reached",
+        "level": "Intermediate",
+        "topic": "Token Management"
+    },
+    {
+        "question": "What is prompt injection?",
+        "options": [
+            "Adding prompts to code",
+            "Malicious inputs designed to override intended behavior",
+            "Using multiple prompts",
+            "Injecting creativity"
+        ],
+        "correct_answer": "Malicious inputs designed to override intended behavior",
+        "level": "Intermediate",
+        "topic": "Security"
+    },
+    {
+        "question": "How can you defend against prompt injection?",
+        "options": [
+            "Use longer prompts",
+            "Input validation and sandboxing",
+            "Increase temperature",
+            "Use more examples"
+        ],
+        "correct_answer": "Input validation and sandboxing",
+        "level": "Intermediate",
+        "topic": "Security"
+    },
+    {
+        "question": "What is the purpose of context windows?",
+        "options": [
+            "To display information",
+            "To limit the amount of text the model can process at once",
+            "To create windows",
+            "To improve speed"
+        ],
+        "correct_answer": "To limit the amount of text the model can process at once",
+        "level": "Intermediate",
+        "topic": "Context Window"
+    },
+    {
+        "question": "How should you manage long conversations within context limits?",
+        "options": [
+            "Ignore the limits",
+            "Summarize or truncate older parts of conversation",
+            "Start over each time",
+            "Use shorter responses"
+        ],
+        "correct_answer": "Summarize or truncate older parts of conversation",
+        "level": "Intermediate",
+        "topic": "Context Management"
+    },
+    {
+        "question": "What is retrieval-augmented generation (RAG)?",
+        "options": [
+            "Using multiple models",
+            "Combining LLMs with external knowledge retrieval",
+            "Generating random responses",
+            "Automated generation"
+        ],
+        "correct_answer": "Combining LLMs with external knowledge retrieval",
+        "level": "Intermediate",
+        "topic": "RAG"
+    },
+    {
+        "question": "When would you use prompt tuning vs fine-tuning?",
+        "options": [
+            "They're the same",
+            "Prompt tuning for quick adaptation, fine-tuning for deeper changes",
+            "Always use fine-tuning",
+            "Always use prompt tuning"
+        ],
+        "correct_answer": "Prompt tuning for quick adaptation, fine-tuning for deeper changes",
+        "level": "Intermediate",
+        "topic": "Tuning Methods"
+    },
+    {
+        "question": "What is the main advantage of prompt tuning?",
+        "options": [
+            "It's more expensive",
+            "It requires less computational resources than fine-tuning",
+            "It's more complex",
+            "It works with fewer examples"
+        ],
+        "correct_answer": "It requires less computational resources than fine-tuning",
+        "level": "Intermediate",
+        "topic": "Prompt Tuning"
+    },
+    {
+        "question": "How should you evaluate prompt performance?",
+        "options": [
+            "Just check one example",
+            "Use multiple metrics and test cases",
+            "Only check accuracy",
+            "Use human judgment only"
+        ],
+        "correct_answer": "Use multiple metrics and test cases",
+        "level": "Intermediate",
+        "topic": "Evaluation"
+    },
+    {
+        "question": "What are common evaluation metrics for prompts?",
+        "options": [
+            "Only accuracy",
+            "Accuracy, relevance, coherence, and task-specific metrics",
+            "Only speed",
+            "Only cost"
+        ],
+        "correct_answer": "Accuracy, relevance, coherence, and task-specific metrics",
+        "level": "Intermediate",
+        "topic": "Evaluation"
+    },
+    {
+        "question": "What is adversarial prompting?",
+        "options": [
+            "Competitive prompting",
+            "Testing prompts with challenging or edge case inputs",
+            "Arguing with the AI",
+            "Using negative prompts"
+        ],
+        "correct_answer": "Testing prompts with challenging or edge case inputs",
+        "level": "Intermediate",
+        "topic": "Adversarial Testing"
+    },
+    {
+        "question": "Why is adversarial testing important?",
+        "options": [
+            "It's fun",
+            "It reveals weaknesses and improves robustness",
+            "It's required",
+            "It makes prompts longer"
+        ],
+        "correct_answer": "It reveals weaknesses and improves robustness",
+        "level": "Intermediate",
+        "topic": "Adversarial Testing"
+    },
+    {
+        "question": "What should you consider for prompt safety?",
+        "options": [
+            "Only accuracy",
+            "Bias, harmful outputs, privacy, and misuse potential",
+            "Only speed",
+            "Only cost"
+        ],
+        "correct_answer": "Bias, harmful outputs, privacy, and misuse potential",
+        "level": "Intermediate",
+        "topic": "Safety"
+    },
+    {
+        "question": "How can you reduce bias in prompts?",
+        "options": [
+            "Ignore it",
+            "Use diverse examples and test across different groups",
+            "Use more complex language",
+            "Increase temperature"
+        ],
+        "correct_answer": "Use diverse examples and test across different groups",
+        "level": "Intermediate",
+        "topic": "Bias Mitigation"
+    },
+    {
+        "question": "What is the purpose of system messages in multi-turn conversations?",
+        "options": [
+            "To end conversations",
+            "To maintain consistent behavior across turns",
+            "To count messages",
+            "To save memory"
+        ],
+        "correct_answer": "To maintain consistent behavior across turns",
+        "level": "Intermediate",
+        "topic": "Multi-turn Conversations"
+    },
+    {
+        "question": "How should you handle context overflow in long conversations?",
+        "options": [
+            "Stop the conversation",
+            "Implement context compression or sliding window",
+            "Ignore older messages",
+            "Start over"
+        ],
+        "correct_answer": "Implement context compression or sliding window",
+        "level": "Advanced",
+        "topic": "Context Management"
+    },
+    {
+        "question": "What is the key challenge in multi-agent prompt engineering?",
+        "options": [
+            "Cost",
+            "Coordinating multiple AI agents effectively",
+            "Speed",
+            "Complexity"
+        ],
+        "correct_answer": "Coordinating multiple AI agents effectively",
+        "level": "Advanced",
+        "topic": "Multi-agent Systems"
+    },
+    {
+        "question": "In advanced CoT, how do you handle conflicting reasoning paths?",
+        "options": [
+            "Choose randomly",
+            "Use ensemble methods or weighted voting",
+            "Always pick the first",
+            "Ignore conflicts"
+        ],
+        "correct_answer": "Use ensemble methods or weighted voting",
+        "level": "Advanced",
+        "topic": "Advanced CoT"
+    },
+    {
+        "question": "What is the most sophisticated approach to prompt optimization?",
+        "options": [
+            "Manual tuning",
+            "Gradient-based prompt optimization using differentiable models",
+            "Random search",
+            "Template matching"
+        ],
+        "correct_answer": "Gradient-based prompt optimization using differentiable models",
+        "level": "Advanced",
+        "topic": "Prompt Optimization"
+    },
+    {
+        "question": "How do you implement effective prompt caching strategies?",
+        "options": [
+            "Cache everything",
+            "Cache based on similarity and reuse patterns",
+            "Never cache",
+            "Cache randomly"
+        ],
+        "correct_answer": "Cache based on similarity and reuse patterns",
+        "level": "Advanced",
+        "topic": "Caching"
+    },
+    {
+        "question": "What is the primary consideration in enterprise prompt governance?",
+        "options": [
+            "Speed",
+            "Version control, access control, and audit trails",
+            "Cost only",
+            "Simplicity"
+        ],
+        "correct_answer": "Version control, access control, and audit trails",
+        "level": "Advanced",
+        "topic": "Governance"
+    },
+    {
+        "question": "How should you design prompts for real-time applications?",
+        "options": [
+            "Make them very long",
+            "Optimize for latency while maintaining quality",
+            "Use maximum creativity",
+            "Ignore performance"
+        ],
+        "correct_answer": "Optimize for latency while maintaining quality",
+        "level": "Advanced",
+        "topic": "Real-time Systems"
+    },
+    {
+        "question": "What is the most effective way to handle multi-modal prompt engineering?",
+        "options": [
+            "Use only text",
+            "Carefully align different modalities with consistent instructions",
+            "Use random combinations",
+            "Ignore modality differences"
+        ],
+        "correct_answer": "Carefully align different modalities with consistent instructions",
+        "level": "Advanced",
+        "topic": "Multi-modal"
+    },
+    {
+        "question": "In production systems, how do you monitor prompt performance degradation?",
+        "options": [
+            "Manual checking",
+            "Automated metrics tracking and alerting systems",
+            "User complaints only",
+            "Periodic reviews"
+        ],
+        "correct_answer": "Automated metrics tracking and alerting systems",
+        "level": "Advanced",
+        "topic": "Monitoring"
+    },
+    {
+        "question": "What is the most advanced technique for handling prompt injection attacks?",
+        "options": [
+            "Longer prompts",
+            "Multi-layer defense with semantic analysis and sandboxing",
+            "Ignoring them",
+            "Using simpler prompts"
+        ],
+        "correct_answer": "Multi-layer defense with semantic analysis and sandboxing",
+        "level": "Advanced",
+        "topic": "Security"
+    },
+    {
+        "question": "How do you implement optimal batch processing for prompts?",
+        "options": [
+            "Process one at a time",
+            "Dynamic batching based on prompt similarity and resource utilization",
+            "Fixed large batches",
+            "Random batching"
+        ],
+        "correct_answer": "Dynamic batching based on prompt similarity and resource utilization",
+        "level": "Advanced",
+        "topic": "Batch Processing"
+    },
+    {
+        "question": "What is the most sophisticated approach to prompt personalization?",
+        "options": [
+            "One size fits all",
+            "Dynamic adaptation based on user behavior and context",
+            "Manual customization",
+            "Random variation"
+        ],
+        "correct_answer": "Dynamic adaptation based on user behavior and context",
+        "level": "Advanced",
+        "topic": "Personalization"
+    },
+    {
+        "question": "In advanced RAG systems, how do you optimize retrieval relevance?",
+        "options": [
+            "Use all available data",
+            "Implement semantic embeddings with contextual reranking",
+            "Random selection",
+            "Alphabetical order"
+        ],
+        "correct_answer": "Implement semantic embeddings with contextual reranking",
+        "level": "Advanced",
+        "topic": "Advanced RAG"
+    },
+    {
+        "question": "What is the most effective strategy for handling model versioning in prompts?",
+        "options": [
+            "Use same prompts always",
+            "Automated testing and gradual migration with rollback capabilities",
+            "Manual updates only",
+            "Ignore versions"
+        ],
+        "correct_answer": "Automated testing and gradual migration with rollback capabilities",
+        "level": "Advanced",
+        "topic": "Model Versioning"
+    },
+    {
+        "question": "How do you implement sophisticated prompt A/B testing?",
+        "options": [
+            "Simple random splits",
+            "Multi-armed bandit algorithms with statistical significance testing",
+            "Manual comparison",
+            "Single test only"
+        ],
+        "correct_answer": "Multi-armed bandit algorithms with statistical significance testing",
+        "level": "Advanced",
+        "topic": "A/B Testing"
+    },
+    {
+        "question": "What is the most advanced approach to handling context window limitations?",
+        "options": [
+            "Use shorter prompts",
+            "Hierarchical summarization with attention mechanisms",
+            "Ignore limitations",
+            "Split randomly"
+        ],
+        "correct_answer": "Hierarchical summarization with attention mechanisms",
+        "level": "Advanced",
+        "topic": "Context Optimization"
+    },
+    {
+        "question": "In complex agent orchestration, what is the key challenge?",
+        "options": [
+            "Individual agent performance",
+            "Inter-agent communication and conflict resolution",
+            "Cost management",
+            "Speed optimization"
+        ],
+        "correct_answer": "Inter-agent communication and conflict resolution",
+        "level": "Advanced",
+        "topic": "Agent Orchestration"
+    },
+    {
+        "question": "How do you implement advanced prompt debugging for production?",
+        "options": [
+            "Manual inspection",
+            "Automated analysis with explainability tools and trace logging",
+            "User feedback only",
+            "Error counting"
+        ],
+        "correct_answer": "Automated analysis with explainability tools and trace logging",
+        "level": "Advanced",
+        "topic": "Advanced Debugging"
+    },
+    {
+        "question": "What is the most sophisticated method for prompt template optimization?",
+        "options": [
+            "Manual design",
+            "Evolutionary algorithms with multi-objective optimization",
+            "Random generation",
+            "Template copying"
+        ],
+        "correct_answer": "Evolutionary algorithms with multi-objective optimization",
+        "level": "Advanced",
+        "topic": "Template Optimization"
+    },
+    {
+        "question": "In advanced safety implementations, how do you handle edge cases?",
+        "options": [
+            "Ignore them",
+            "Comprehensive red-teaming with adversarial generation",
+            "Hope for the best",
+            "Basic filtering"
+        ],
+        "correct_answer": "Comprehensive red-teaming with adversarial generation",
+        "level": "Advanced",
+        "topic": "Advanced Safety"
+    },
+    {
+        "question": "What is the most effective approach to handling prompt latency optimization?",
+        "options": [
+            "Use shorter prompts",
+            "Multi-tier caching with predictive pre-computation",
+            "Accept slow responses",
+            "Use faster hardware only"
+        ],
+        "correct_answer": "Multi-tier caching with predictive pre-computation",
+        "level": "Advanced",
+        "topic": "Latency Optimization"
+    },
+    {
+        "question": "How do you implement advanced bias detection in prompts?",
+        "options": [
+            "Manual review",
+            "Automated bias scanning with demographic parity testing",
+            "User reports only",
+            "Ignore bias"
+        ],
+        "correct_answer": "Automated bias scanning with demographic parity testing",
+        "level": "Advanced",
+        "topic": "Bias Detection"
+    },
+    {
+        "question": "What is the most sophisticated approach to handling prompt failures?",
+        "options": [
+            "Show error messages",
+            "Graceful degradation with fallback strategies",
+            "Stop processing",
+            "Retry indefinitely"
+        ],
+        "correct_answer": "Graceful degradation with fallback strategies",
+        "level": "Advanced",
+        "topic": "Failure Handling"
+    },
+    {
+        "question": "In advanced prompt chaining, how do you optimize the flow?",
+        "options": [
+            "Linear chains only",
+            "Dynamic routing with conditional branching",
+            "Fixed sequences",
+            "Random order"
+        ],
+        "correct_answer": "Dynamic routing with conditional branching",
+        "level": "Advanced",
+        "topic": "Advanced Chaining"
+    },
+    {
+        "question": "What is the most effective method for prompt compliance monitoring?",
+        "options": [
+            "Manual audits",
+            "Real-time compliance checking with automated reporting",
+            "User feedback",
+            "Periodic sampling"
+        ],
+        "correct_answer": "Real-time compliance checking with automated reporting",
+        "level": "Advanced",
+        "topic": "Compliance"
+    },
+    {
+        "question": "How do you implement advanced prompt cost optimization?",
+        "options": [
+            "Use shortest prompts",
+            "Dynamic resource allocation with predictive scaling",
+            "Fixed budgets",
+            "Ignore costs"
+        ],
+        "correct_answer": "Dynamic resource allocation with predictive scaling",
+        "level": "Advanced",
+        "topic": "Cost Optimization"
+    },
+    {
+        "question": "What is the most sophisticated approach to prompt quality assurance?",
+        "options": [
+            "Manual testing",
+            "Automated testing pipelines with continuous integration",
+            "User testing only",
+            "No testing"
+        ],
+        "correct_answer": "Automated testing pipelines with continuous integration",
+        "level": "Advanced",
+        "topic": "Quality Assurance"
+    },
+    {
+        "question": "In advanced multi-turn conversations, how do you maintain coherence?",
+        "options": [
+            "Simple memory",
+            "Contextual state management with semantic consistency checking",
+            "No memory",
+            "Fixed responses"
+        ],
+        "correct_answer": "Contextual state management with semantic consistency checking",
+        "level": "Advanced",
+        "topic": "Multi-turn Coherence"
+    },
+    {
+        "question": "What is the most effective strategy for handling prompt scalability?",
+        "options": [
+            "Single instance",
+            "Distributed processing with load balancing and auto-scaling",
+            "Fixed capacity",
+            "Manual scaling"
+        ],
+        "correct_answer": "Distributed processing with load balancing and auto-scaling",
+        "level": "Advanced",
+        "topic": "Scalability"
+    },
+    {
+        "question": "How do you implement the most advanced prompt analytics?",
+        "options": [
+            "Basic counting",
+            "Real-time analytics with predictive insights and anomaly detection",
+            "Manual reports",
+            "No analytics"
+        ],
+        "correct_answer": "Real-time analytics with predictive insights and anomaly detection",
+        "level": "Advanced",
+        "topic": "Analytics"
+    }
+]
